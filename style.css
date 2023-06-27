@@ -123,7 +123,19 @@ p.full-site-coming-soon {
         height: 440px;
     }
 
+    .drawing-dots {
+        gap: 10px;
+    }
+
+    .drawing-dot {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 1px solid #444;
+    }
+
     .drawing-bar {
+        height: 16px;
         width: 160px;
     }
 
