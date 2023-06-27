@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.hero-background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .3;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+nav {
+    padding: 30px;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+.container {
+    padding: 0 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 20px));
+    width: 100%;
+}
+
+.drawing-website {
+    width: 675px;
+    height: 500px;
+    border: 1px solid #444;
+    border-radius: 18px;
+    padding: 16px;
+    margin-inline: auto;
+}
+
+.drawing-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drawing-dots {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.drawing-dot {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: 1px solid #444;
+}
+
+.drawing-bar {
+    height: 26px;
+    width: 325px;
+    border-radius: 26px;
+    border: 1px solid #444;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    color: #444;
+}
+
+h1 i {
+    color: #847D4C;
+}
+
+.contact-buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contact-buttons-container>:hover {
+    opacity: .7;
+    transition: opacity .35s;
+}
+
+p.full-site-coming-soon {
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    text-align: center;
+}
+
+@media (max-width: 735px) {
+    nav {
+        padding: 20px;
+    }
+
+    .drawing-website {
+        width: 100%;
+    }
+
+    .drawing-bar {
+        width: 160px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contact-buttons-container {
+        gap: 20px;
+    }
+
+    .contact-btn {
+        width: 27px;
+        height: 27px;
+    }
+
+    p.full-site-coming-soon {
+        margin-top: 40px;
+    }
+}
